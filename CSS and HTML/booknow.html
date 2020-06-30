@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booknow</title>
+<style>
+.myForm {
+font-family: arial;
+font-size: 10px;
+width: 70%;
+padding: 10px;
+border: 1px solid #ccc;
+padding-top: 30px;
+color: white;
+margin: auto;
+}
+.myForm * {
+box-sizing: border-box;
+font-size:16px;
+}
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+.myForm label.choice {
+font-size: 15px;
+font-weight: normal;
+}
+.myForm label {
+text-align: left;
+display: block;
+}
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="date"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 10px;
+height: 30px;
+padding: 10px;
+margin-left: 20px;
+}
+.myForm textarea {
+height: 80px;
+padding: 10px;
+}
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+padding: 10px;
+}
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+}
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+ul {
+ list-style-type: none;
+ margin: 0;
+padding: 0;
+ overflow: hidden;
+ background-color: #8B8B8B;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+li {
+ float: left;
+}
+.cap {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a:hover:not(.active) {
+ background-color: #111;
+}
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+h1{
+margin-left: 15%;
+ color: aqua;
+}
+</style>
+</head>
+<body bgcolor="black">
+<ul>
+ <li class="cap">RS TOURS AND TRAVELS</li>
+ <li><a href="aboutnew.html">About Us</a></li>
+ <li><a href="upcoming.html">Upcoming Tours</a></li>
+ <li><a href="recent.html">Recent Tours</a></li>
+ <li><a href="contactus.html">Contact Us</a></li>
+ <li style="float:right;"><a href="logout.php">Logout</a></li>
+</ul>
+<br>
+<br>
+<h1>Booking Details</h1>
+<form class="myForm" method="post" action="booking.php">
+<p>
+<label>Name
+<input type="text" name="customer_name" required>
+</label>
+</p>
+<p>
+<label>Phone
+<input type="text" name="phone_number" required>
+</label>
+</p>
+<p>
+<label>Email
+<input type="email" name="email_address" required>
+</label>
+</p>
+<legend>Gender</legend>
+<p><label class="choice"> <input type="radio" name="gender" required value="male">
+Male</label></p>
+<p><label class="choice"> <input type="radio" name="gender" required value="female">
+Female</label></p>
+<legend>Payment option</legend>
+<p><label class="choice"> <input type="radio" name="PaymentOption"
+value="gpay">Google Pay</label></p>
+<p><label class="choice"> <input type="radio" name="PaymentOption"
+value="card">Debit/Credit card</label></p>
+<p><label class="choice"> <input type="radio" name="PaymentOption"
+value="bhimupi">BHIM-UPI</label></p>
+<p><label class="choice"> <input type="radio" name="PaymentOption"
+value="paytm">PayTM</label></p>
+<p>
+<label>From
+<input type="date" name="fromDate" required>
+</label>
+</p>
+<p>
+<label>No of People
+<input type="text" name="people" required>
+</label>
+</p>
+<p><button type="submit">Submit Booking</button></p>
+</form>
+</body>
+</html>

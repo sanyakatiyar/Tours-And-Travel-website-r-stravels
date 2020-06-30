@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+ box-shadow: 0 3px 6px 0 white;
+ max-width: 500px;
+ margin: auto;
+ text-align: center;
+ background-color: white;
+ color: black;
+}
+.price {
+ color: grey;
+ font-size: 22px;
+}
+.card button {
+ border: none;
+/*outline: 0;*/
+ padding: 12px;
+ color: aqua;
+ background-color: grey;
+ text-align: center;
+ width: 100%;
+ font-size: 18px;
+}
+.card button:hover {
+ opacity: 0.7;
+}
+* {
+ box-sizing: border-box;
+}
+.row {
+ padding-left: 10%;
+ padding-right: 10%;
+ display: flex;
+}
+.column {
+ flex: 33.33%;
+ padding: 30px;
+}
+img {
+ width: 100px;
+ height: 250px;
+}
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #8B8B8B;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+li {
+ float: left;
+}
+.cap {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a:hover:not(.active) {
+ background-color: #111;
+}
+h2{
+ color: aqua;
+ font-family: fangsong;
+}
+</style>
+</head>
+<body bgcolor="black">
+<br><br><br>
+<h1 style="font-family: Arial; color: aqua;"><center>RECENT TOURS</center></h1>
+<hr style="width: 75%;">
+<ul>
+<li class="cap">RS TOURS AND TRAVELS</li>
+ <li><a href="aboutnew.html">About Us</a></li>
+ <li><a href="upcoming.html">Upcoming Tours</a></li>
+ <li><a href="recent.html">Recent Tours</a></li>
+ <li><a href="contactus.html">Contact Us</a></li>
+ <li style="float:right;"><a href="logout.php">Logout</a></li>
+</ul>
+<div class="row">
+ <div class="column">
+ <div class="card">
+ <img src="nanital.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Nainital</h1>
+ <p>The gem of Uttarakhand - Nainital is a charming hill station that sits prettily at the green
+foothills of the Kumaon ranges in the Himalayas. Located at an elevation of around 1938
+metres, the epicentre of the town’s popularity and beauty lies within the gorgeous Naini Lake,
+after which the town is named.</p>
+ <p><a href="nainital.html"><button>Read More...</button></a></p>
+</div>
+</div>
+ <div class="column">
+ <div class="card">
+ <img src="gujarat.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Gujarat Tour</h1>
+ <p>Located in the westernmost part of India, Gujarat is home to several architectural
+marvels and is famous for its vibrant culture and rich heritage, apart from the scenic
+landscapes and mouth-watering cuisine. Offering a broad range of the most spectacular
+attractions, Gujarat, also known as 'The Land of Legends'</p>
+ <p><a href="gujarat.html"><button>Read more...</button></a></p>
+</div>
+</div>
+</div>
+</body>
+</html>

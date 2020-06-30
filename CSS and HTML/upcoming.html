@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+ box-shadow: 0 3px 6px 0 white;
+ max-width: 500px;
+ margin: auto;
+ text-align: center;
+ background-color: white;
+ color: black;
+}
+.price {
+ color: grey;
+ font-size: 22px;
+}
+.card button {
+ border: none;
+ /*outline: 0;*/
+ padding: 12px;
+ color: aqua;
+ background-color: grey;
+ text-align: center;
+ /*cursor: pointer;*/
+ width: 100%;
+ font-size: 18px;
+}
+.card button:hover {
+ opacity: 0.7;
+}
+* {
+ box-sizing: border-box;
+}
+.row {
+ padding-left: 10%;
+ padding-right: 10%;
+ display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+ flex: 33.33%;
+ padding: 30px;
+}
+img {
+ width:60px;
+ height: 150px;
+}
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #8B8B8B;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+li {
+ float: left;
+}
+.cap {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+li a:hover:not(.active) {
+ background-color: #111;
+}
+h2{
+ color: aqua;
+ font-family: fangsong;
+}
+</style>
+</head>
+<body bgcolor="black">
+<br><br><br>
+<h1 style="font-family: Arial; color: aqua;"><center>UPCOMING TOURS</center></h1>
+<hr style="width: 75%;">
+<ul>
+<li class="cap">RS TOURS AND TRAVELS</li>
+ <li><a href="aboutnew.html">About Us</a></li>
+ <li><a href="upcoming.html">Upcoming Tours</a></li>
+ <li><a href="recent.html">Recent Tours</a></li>
+ <li><a href="contactus.html">Contact Us</a></li>
+ <li style="float:right;"><a href="logout.php">Logout</a></li>
+</ul>
+<div class="row">
+ <div class="column">
+ <div class="card">
+ <img src="spiti.jpeg" alt="" style="width:100%" class="newimg">
+ <h1>Spiti Valley Trip</h1>
+ <p class="price">Rs 5,000</p>
+ <p>5 nights / 6 days</p>
+ <a href="spiti.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+ <div class="column">
+ <div class="card">
+ <img src="mcled.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Mcleodganj</h1>
+ <p class="price">Rs 4000</p>
+ <p>2 nights / 3 days</p>
+ <a href="MCLEODGANJ.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+ <div class="column">
+ <div class="card">
+ <img src="jaipur.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Jaipur</h1>
+ <p class="price">Rs 7000</p>
+ <p>5 nights / 6 days</p>
+ <a href="jaipur.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+ <div class="card">
+ <img src="MANALI.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Manali</h1>
+ <p class="price">Rs 8,000</p>
+ <p>6 nights / 7 days</p>
+<a href="MANALI.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+<div class="column">
+ <div class="card">
+ <img src="kerela.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Kerela</h1>
+ <p class="price">Rs 5,000</p>
+ <p>5 nights / 6 days</p>
+ <a href="kerala.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+<div class="column">
+ <div class="card">
+ <img src="amritsar.jpg" alt="" style="width:100%" class="newimg">
+ <h1>Amritsar</h1>
+ <p class="price">Rs 4,000</p>
+ <p>5 nights / 6 days</p>
+ <a href="amritsar.html"><p><button>BOOK TRAVEL</button></p></a>
+</div>
+</div>
+</div>
+</body>
+</html>
